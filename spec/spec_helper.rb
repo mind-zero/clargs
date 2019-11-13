@@ -42,11 +42,11 @@ RSpec.configure do |config|
   end
 
   config.after(:example) do |ex|
-    CLIBuilder::Log.instance.info("=== FINISHED EXAMPLE #{ex.metadata[:full_description].inspect} #{ex.metadata[:file_path]}:#{ex.metadata[:line_number]}")
+    Clargs::Log.instance.info("=== FINISHED EXAMPLE #{ex.metadata[:full_description].inspect} #{ex.metadata[:file_path]}:#{ex.metadata[:line_number]}")
   end
 
   config.before(:suite) do
-    CLIBuilder::Log.instance.level = Logger::DEBUG
+    Clargs::Log.instance.level = Logger::DEBUG
   end
 
   # rspec-mocks config goes here. You can use an alternate test double

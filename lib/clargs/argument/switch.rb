@@ -1,4 +1,4 @@
-module CLIBuilder
+module Clargs
   class Argument
     # Switch argument, an argument that expects a value
     class Switch

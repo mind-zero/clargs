@@ -1,16 +1,16 @@
 
 lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'cli_builder/gem_version'
+require 'clargs/gem_version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "cli_builder"
-  spec.version       = CLIBuilder::GEM_VERSION
+  spec.name          = "clargs"
+  spec.version       = Clargs::GEM_VERSION
   spec.authors       = ['mirai_step']
   spec.email         = 'vhector.1337@gmail.com'
 
-  spec.summary       = 'Tool to help you make build CLI tools'
-  spec.homepage      = 'https://github.com/mirai-step/cli_builder'
+  spec.summary       = 'Wrapper around optparse for positional, value, & switch arguments'
+  spec.homepage      = 'https://github.com/mirai-step/clargs'
   spec.license       = "MIT"
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
@@ -19,10 +19,10 @@ Gem::Specification.new do |spec|
     spec.metadata["allowed_push_host"] = "TODO: Set to 'http://mygemserver.com'"
 
     spec.metadata["homepage_uri"] = spec.homepage
-    spec.metadata["source_code_uri"] = 'https://github.com/mirai-step/cli_builder'
-    spec.metadata["changelog_uri"] = 'https://github.com/mirai-step/cli_builder/blob/master/CHANGELOG.md'
+    spec.metadata["source_code_uri"] = 'https://github.com/mirai-step/clargs'
+    spec.metadata["changelog_uri"] = 'https://github.com/mirai-step/clargs/blob/master/CHANGELOG.md'
   else
-    raise "RubyGems 2.0 or newer is required to protect against " \
+    raise "/RubyGems 2.0 or newer is required to protect against " \
       "public gem pushes."
   end
 

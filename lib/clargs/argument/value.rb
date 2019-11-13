@@ -1,4 +1,4 @@
-module CLIBuilder
+module Clargs
   class Argument
     # Value argument, an argument that expects a value
     class Value

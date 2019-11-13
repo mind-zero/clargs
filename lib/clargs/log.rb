@@ -1,7 +1,7 @@
 require 'logger'
-require 'cli_builder/log/mixin'
+require 'clargs/log/mixin'
 
-module CLIBuilder
+module Clargs
   # Simple 'split logger'
   # Unless you override the logger:
   # * debug and info log records are output to STDOUT

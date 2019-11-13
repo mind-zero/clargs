@@ -1,13 +1,13 @@
-# CLIBuilder
+# Clargs
 
-A tool to help you build CLI tools!
+A wrapper around Ruby's `optparse` that provides positional, value, & switch arguments.
 
 ## Installation
 
 Add this line to your application's Gemfile:
 
 ```ruby
-gem 'cli_builder'
+gem 'clargs'
 ```
 
 And then execute:
@@ -16,4 +16,4 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install cli_builder
+    $ gem install clargs
